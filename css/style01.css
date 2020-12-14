@@ -1,0 +1,1396 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+#section0{
+    background-color: #232323;
+    color:#fff;
+}
+
+#I{
+   margin-top: -3.5cm;
+    margin-left: 3.76cm;
+    font-size: 17pt;
+}
+
+
+#In{
+    font-size: 17pt;
+    margin-left: 3.76cm;
+    margin-top: 1.06cm;
+    line-height:0.8cm;
+}
+
+#line{
+    border-bottom: solid 1px #fff;
+    width: 1.87cm;
+    margin-top: 1.22cm;
+    margin-left: 3.76cm;
+}
+
+#index{
+    margin-left: 3.76cm;
+    font-size: 9pt;
+    margin-top: 1.08cm;
+    line-height:0.7cm;
+}
+
+body{
+  font-family: 'NanumSquare', sans-serif;
+}
+
+#topMenu {           
+    margin-top:-12.5cm;
+    margin-left: 20.5cm;
+    height: 30px; 
+    width: 850px;
+}
+#topMenu ul li {                     
+    list-style: none;           
+    color: white;             
+    float: left;             
+    line-height: 30px;         
+    vertical-align: middle;   
+    text-align: center;        
+}
+#topMenu .menuLink {                            
+    text-decoration:none;                     
+    color: white;                            
+    display: block;                           
+    width: 150px;                            
+    font-size: 12px;                                                  
+}
+#topMenu .menuLink:hover {          
+    font-weight: bold;
+}
+
+
+
+#title {
+    text-align:center;
+    margin-top:100px;
+  }
+
+  body {
+    background-color: #1D1E22;
+   
+  }
+
+
+
+  
+.preview {
+
+position: absolute; right: 0; bottom: 0;top: 0; left: 0;
+
+width:100%; height:100vh;
+ z-index: 100;
+
+
+/*background: url(polina.jpg) no-repeat;*/
+
+background-size: cover;
+
+}
+
+ #bg{
+   position: relative;
+    margin-left: 150px;
+    width: 1200px;
+}
+
+#info_1{                                               
+  position: absolute;
+  top:15%;
+  left:50%;
+  transform: translate(-50%, -50%);                                                                   
+  color: black;
+  z-index: 2;
+  text-align: center;
+  font-size: 17pt;
+}
+
+#info_2{                                           
+  position: absolute;
+  top:90%;
+  left:50%;
+  transform: translate(-50%, -50%);                                                                   
+  color: black;
+  z-index: 2;
+  text-align: center;
+  font-size: 17pt;
+  line-height: 37pt;
+  width: 1200px;
+  
+}  
+
+.imgswap img:last-child{display:none} 
+.imgswap:hover img:first-child{display:none} 
+.imgswap:hover img:last-child{display:inline-block; translate: all 0.5s;}
+
+
+
+
+.bold{
+  font-weight: bold;
+}
+
+.pink{
+  color: #ff086e;
+}
+
+#menu li {
+  font-size: 10pt;
+	display:inline-block;
+	margin: 5px;
+	color: #818181;
+
+}
+
+
+#menu li.active{
+	color:  #818181;
+}
+#menu li a{
+  transition: all 200ms;
+	text-decoration:none;
+	color:  #818181;
+}
+#menu li.active a:hover{
+
+  color: #ff086e;
+}
+#menu li:hover{
+  transition: all 200ms;
+  font-weight: bold;
+  color: #ff086e;
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+  color: #ff086e;
+
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:47%;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+  margin:0;
+  font-family: 'NanumSquare', sans-serif;
+}
+#aaa12{
+  float: left;
+  list-style: none;
+  z-index: 1000;
+}
+
+#logo_1{
+  position: fixed;
+  z-index: 100;
+  
+  color:#fff;}
+
+#logo{
+position: fixed;
+z-index: 100;
+margin-left: 40px;
+margin-top: 8px;
+color:#fff;
+width: 200px;}
+#img_con{
+  margin-left: 40px;
+}
+
+#img1{
+ 
+  position: relative;
+  margin-left: 19.8%;
+  width: 230px;
+  z-index: 10000px;
+}
+
+
+#img2{
+  position: absolute;
+  margin-left: 500px;
+  margin-top: -230px;
+  z-index: -10000px;
+  width: 230px;
+}
+
+#img3{
+  position: absolute;
+  margin-left: 705px;
+  margin-top: -230px;
+  width: 230px;
+}
+
+
+#img4{
+  position: absolute;
+  margin-left: 910px;
+  margin-top: -230px;
+  width: 230px;
+}
+
+
+#re{
+  font-size: 17pt;
+  margin-top: -3.43cm;
+  margin-left: 16.3cm;
+  position: absolute;
+}
+
+#re_1{
+  font-size: 17pt;
+  line-height: 37pt;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 550px;
+}
+
+#re_2{
+  position: absolute;
+  font-size: 9pt;
+  line-height: 13pt;
+  color: #7c7c7c;
+  margin-left: 1030px;
+  margin-top: 105px; 
+  text-align: right;
+}
+
+#be{
+  color:#fff;
+  font-size: 17pt;
+  margin-bottom: 900px;
+  margin-left: 650px;
+  min-width: 500px;
+}
+
+#be_2{
+  position: absolute;
+  color:#fff;
+  font-size: 17pt;
+  margin-top: 150px;
+  margin-left: -450px;
+  min-width: 500px;
+}
+
+#be_3{
+  position: absolute;
+  color:#fff;
+  font-size: 17pt;
+  margin-left: 150px;
+  min-width: 500px;
+
+}
+
+.line{
+  position: absolute;
+  border-bottom: solid 1px #fff;
+  width: 1cm;
+  margin-left: -60px;
+  margin-top: 13px;
+
+}
+.line2{
+  position: absolute;
+  border-bottom: solid 1px #fff;
+  width: 1cm;
+  margin-left: 420px;
+  margin-top: -13px;
+
+
+}
+
+#con{
+  margin-top: -150px;
+}
+
+#be_4{
+  position: absolute;
+  color:#fff;
+  font-size: 17pt;
+  margin-top: 250px;
+  margin-left: -450px;
+  
+}
+#icon_title{
+  position: absolute;
+  font-size: 17pt;
+  margin-left: 38%;
+  margin-top: -25px;
+}
+#con_2{
+
+  margin-top: 150px;
+  margin-left: 20%;
+ 
+}
+
+
+
+
+#con1{
+  margin-right: 1.61cm;
+  width: 130px;
+  z-index: 1000;
+}
+
+#con2{
+  margin-right: 1.61cm;
+  width: 130px;
+}
+#con3{
+  margin-right: 1.61cm;
+  width: 130px;
+}
+#con4{
+  margin-right: 1.61cm;
+  width: 130px;
+}
+#con5{
+  margin-right: 1.61cm;
+  width: 130px;
+}
+#con6{
+  margin-right: 1.61cm;
+  width: 130px;
+}
+
+#con_info_con{
+  font-size: 9pt;
+  line-height: 15pt;
+  margin-top: 20PX;
+}
+
+#con_info{
+  position: absolute;
+  margin-top: 40px;
+}
+
+#con_info_2{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 210px; 
+}
+
+#con_info_4{
+  position: absolute;
+  margin-left: 410px; 
+}
+
+#con_info_6{
+  position: absolute;
+  margin-left: 610px; 
+  margin-top: -20px;
+}
+
+#con_info_8{
+  position: absolute;
+  margin-left:810px; 
+  margin-top: -40px;
+}
+
+
+#myVideo{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+   background-color: black; /* in case the video doesn't fit the whole page*/
+   
+    background-position: center center;
+    background-size: contain;
+     object-fit: cover; /*cover video background */
+     z-index:3;
+}
+
+
+
+/* Layer with position absolute in order to have it over the video
+* --------------------------------------- */
+#section1 .layer{
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  left: 0;
+  top: 43%;
+
+  /*
+  * Preventing flicker on some browsers
+  * See http://stackoverflow.com/a/36671466/1081396  or issue #183
+  */
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+#section1{
+  overflow: hidden;
+}
+
+#bg02{
+  position: relative;
+  height: 100vh;
+ width: 100%;
+ z-index: -1;
+ min-height:100vh;
+}
+
+
+
+
+
+#bg_03{
+  z-index: -5;
+  position: relative;
+  height: 100vh;
+ width: 100%;
+}
+
+
+
+.img_01{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 100px
+}
+
+.info_01{
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 100px;
+  line-height: 30pt;
+  font-size: 13pt;
+  color:#fff;
+ 
+}
+
+
+.info_02{
+  position: absolute;
+  margin-top: 247px;
+  margin-left: 100px;
+  line-height: 30pt;
+  font-size: 13pt;
+  color:#fff;
+ 
+}
+
+
+
+
+
+
+
+
+.msa-box {
+  z-index: 0;
+  position: absolute;
+  
+    margin: 0 auto;
+  
+  margin-top: -450px;
+  margin-left: 1150px;
+  
+    background-clip: padding-box;
+  
+  }
+  
+  .msa-button {
+    padding: 10px;
+    cursor: url(h_1.png) 0 0, auto;
+    transition: all 0.msa-3s ease-out;
+  
+  }
+  
+  .msa-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.51);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+  }
+  .msa-overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .msa-popup { 
+    z-index: 10000px;
+    margin: 70px auto;
+    padding: 20px;
+    background: linear-gradient(53deg, rgba(22,0,255,1) 0%, rgba(184,37,255,1) 53%, rgba(255,0,146,1) 100%);
+    width:500px;
+    height: 500px;
+    border-radius: 500px;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .msa-popup .msa-close {
+    position: absolute;
+    top: 40px;
+    right: 260px;
+    font-size: 40px;
+    color: #fff;
+    transition: all 200ms;
+    font-weight: bold;
+    text-decoration: none;
+
+  }
+  .msa-popup .msa-close:hover {
+    color: #3462FA;
+  }
+  .msa-popup .msa-content {
+    max-height: 30%;
+    
+    font-size:.9em;
+  }
+  
+  .msa-container {
+    width:500px;
+    height: 900px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+  .msa-box2 {
+    position: absolute;
+    
+      margin: 0 auto;
+    
+    margin-top: -300px;
+    margin-left: 1110px;
+    
+      background-clip: padding-box;
+    
+    }
+    
+    .msa-button2 {
+      padding: 10px;
+      transition: all 0.msa-3s ease-out;
+    
+    }
+    
+
+    .msa-overlay2:target {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    .msa-popup2 { 
+      z-index: 10000px;
+      margin: 70px auto;
+      padding: 20px;
+      background: linear-gradient(53deg, rgba(22,0,255,1) 0%, rgba(184,37,255,1) 53%, rgba(255,0,146,1) 100%);
+      width:500px;
+      height: 500px;
+      border-radius: 500px;
+      position: relative;
+      transition: all 5s ease-in-out;
+    }
+    
+    .msa-popup2 .msa-close2 {
+      position: absolute;
+      top: 40px;
+      right: 260px;
+      font-size: 40px;
+      color: #fff;
+      transition: all 200ms;
+      font-weight: bold;
+      text-decoration: none;
+
+    }
+    .msa-popup2 .msa-close2:hover {
+      color: #3462FA;
+    }
+    .msa-popup2 .msa-content2 {
+      max-height: 30%;
+      
+      font-size:.9em;
+    }
+    
+    .msa-container2 {
+      width:500px;
+      height: 900px;
+      margin: 0 auto;
+      max-width: 600px;
+      text-align: center;
+    }
+    
+    
+  
+/* 
+    
+
+
+
+  .msa-box3 {
+    z-index: -1;
+    position: absolute;
+    
+      margin: 0 auto;
+    
+    margin-top: -570px;
+    margin-left: 300px;
+    
+      background-clip: padding-box;
+    
+    }
+    
+    .msa-button3 {
+      z-index: -1;
+      padding: 10px;
+      cursor: pointer;
+      transition: all 0.msa-3s ease-out;
+    
+    }
+    
+    .msa-overlay3 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.51);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+    }
+    .msa-overlay3:target {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    .msa-popup3 { 
+      z-index: 10000px;
+      margin: 70px auto;
+      padding: 20px;
+      background: linear-gradient(53deg, rgba(22,0,255,1) 0%, rgba(184,37,255,1) 53%, rgba(255,0,146,1) 100%);
+      width:500px;
+      height: 500px;
+      border-radius: 500px;
+      position: relative;
+      transition: all 5s ease-in-out;
+    }
+    
+    .msa-popup3 .msa-close3 {
+      position: absolute;
+      top: 40px;
+      right: 150px;
+      font-size: 25px;
+      transition: all 200ms;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .msa-popup3 .msa-close3:hover {
+      color: #3462FA;
+    }
+    .msa-popup3 .msa-content3 {
+      max-height: 30%;
+      
+      font-size:.9em;
+    }
+    
+    .msa-container3 {
+      width:500px;
+      height: 900px;
+      margin: 0 auto;
+      max-width: 600px;
+      text-align: center;
+    }
+    
+    
+ */
+
+
+
+
+
+
+  .msa-box4 {
+  
+    position: absolute;
+    
+      margin: 0 auto;
+    
+    margin-top: -300px;
+    margin-left: 210px;
+    
+      background-clip: padding-box;
+    
+    }
+    
+    .msa-button4 {
+      padding: 10px;
+      cursor: url(h_1.png) 0 0, auto;
+      transition: all 0.msa-3s ease-out;
+   
+    }
+    
+    .msa-overlay4 {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.51);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 5;
+    }
+    .msa-overlay4:target {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    .msa-popup4 { 
+      z-index: 10000px;
+      margin: 70px auto;
+      padding: 20px;
+      background: linear-gradient(53deg, rgba(22,0,255,1) 0%, rgba(184,37,255,1) 53%, rgba(255,0,146,1) 100%);
+      width:500px;
+      height: 500px;
+      border-radius: 500px;
+      position: relative;
+      transition: all 5s ease-in-out;
+    }
+    
+    .msa-popup4 .msa-close4 {
+      position: absolute;
+      top: 40px;
+      right: 260px;
+      font-size: 40px;
+      color: #fff;
+      transition: all 200ms;
+      font-weight: bold;
+      text-decoration: none;
+      
+    }
+    .msa-popup4 .msa-close4:hover {
+      color: #3462FA;
+    }
+    .msa-popup4 .msa-content4 {
+      max-height: 30%;
+      
+      font-size:.9em;
+    }
+    
+    .msa-container4 {
+      width:500px;
+      height: 900px;
+      margin: 0 auto;
+      max-width: 600px;
+      text-align: center;
+    }
+    
+    
+  
+
+
+
+
+    .msa-box3 {
+  
+      position: absolute;
+      
+        margin: 0 auto;
+        margin-top: -570px;
+        margin-left: 300px;
+      
+        background-clip: padding-box;
+      
+      }
+      
+      .msa-button3 {
+        padding: 10px;
+        cursor: url(h_1.png) 0 0, auto;
+        transition: all 0.msa-3s ease-out;
+     
+      }
+      
+      .msa-overlay3 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.51);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 5;
+      }
+      .msa-overlay3:target {
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      .msa-popup3 { 
+        z-index: 10000px;
+        margin: 70px auto;
+        padding: 20px;
+        background: linear-gradient(53deg, rgba(22,0,255,1) 0%, rgba(184,37,255,1) 53%, rgba(255,0,146,1) 100%);
+        width:500px;
+        height: 500px;
+        border-radius: 500px;
+        position: relative;
+        transition: all 5s ease-in-out;
+      }
+      
+      .msa-popup3 .msa-close3 {
+        position: absolute;
+        top: 40px;
+        right: 260px;
+        font-size: 40px;
+        color: #fff;
+        transition: all 200ms;
+        font-weight: bold;
+        text-decoration: none;
+
+      }
+      .msa-popup3 .msa-close3:hover {
+        color: #3462FA;
+      }
+      .msa-popup3 .msa-content3 {
+        max-height: 30%;
+        
+        font-size:.9em;
+      }
+      
+      .msa-container3 {
+        width:500px;
+        height: 900px;
+        margin: 0 auto;
+        max-width: 600px;
+        text-align: center;
+      }
+      
+      
+    
+    
+    
+    
+  
+  
+      .msa-box5 {
+  
+        position: absolute;
+        
+          margin: 0 auto;
+        
+        margin-top: -470px;
+        margin-left: 135px;
+        
+          background-clip: padding-box;
+        
+        }
+        
+        .msa-button5 {
+          padding: 10px;
+          cursor: url(h_1.png) 0 0, auto;
+          transition: all 0.msa-3s ease-out;
+       
+        }
+        
+        .msa-overlay5 {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(0,0,0,0.51);
+          transition: opacity 500ms;
+          visibility: hidden;
+          opacity: 0;
+          z-index: 5;
+        }
+        .msa-overlay5:target {
+          visibility: visible;
+          opacity: 1;
+        }
+        
+        .msa-popup5 { 
+          z-index: 10000px;
+          margin: 70px auto;
+          padding: 20px;
+          background: linear-gradient(53deg, rgba(22,0,255,1) 0%, rgba(184,37,255,1) 53%, rgba(255,0,146,1) 100%);
+          width:500px;
+          height: 500px;
+          border-radius: 500px;
+          position: relative;
+          transition: all 5s ease-in-out;
+        }
+        
+        .msa-popup5 .msa-close5 {
+          position: absolute;
+          top: 40px;
+          right: 260px;
+          font-size: 40px;
+          color: #fff;
+          transition: all 200ms;
+          font-weight: bold;
+          text-decoration: none;
+
+        }
+        .msa-popup5 .msa-close5:hover {
+          color: #3462FA;
+        }
+        .msa-popup5 .msa-content5 {
+          max-height: 30%;
+          
+          font-size:.9em;
+        }
+        
+        .msa-container5 {
+          width:500px;
+          height: 900px;
+          margin: 0 auto;
+          max-width: 600px;
+          text-align: center;
+        }
+        
+        
+      
+    
+    
+  
+       
+
+
+.msa-box6 {
+  z-index: 0;
+  position: absolute;
+  
+    margin: 0 auto;
+  
+  margin-top: -550px;
+  margin-left: 1000px;
+  
+    background-clip: padding-box;
+  
+  }
+  
+  .msa-button6 {
+    padding: 10px;
+    cursor: url(h_1.png) 0 0, auto;
+    transition: all 0.msa-3s ease-out;
+  
+  }
+  
+  .msa-overlay6 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.51);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+  }
+  .msa-overlay6:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .msa-popup6 { 
+    z-index: 10000px;
+    margin: 70px auto;
+    padding: 20px;
+    background: linear-gradient(53deg, rgba(22,0,255,1) 0%, rgba(184,37,255,1) 53%, rgba(255,0,146,1) 100%);
+    width:500px;
+    height: 500px;
+    border-radius: 500px;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .msa-popup6 .msa-close6 {
+    position: absolute;
+    top: 40px;
+    right: 260px;
+    font-size: 40px;
+    color: #fff;
+    transition: all 200ms;
+    font-weight: bold;
+    text-decoration: none;
+
+  }
+  .msa-popup6 .msa-close6:hover {
+    color: #3462FA;
+  }
+  .msa-popup6 .msa-content6 {
+    max-height: 30%;
+    
+    font-size:.9em;
+  }
+  
+  .msa-container6 {
+    width:500px;
+    height: 900px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+
+
+
+
+         
+
+
+.msa-box7 {
+  z-index: 0;
+  position: absolute;
+  
+    margin: 0 auto;
+  
+  margin-top: -179px;
+  margin-left: 1120px;
+  
+    background-clip: padding-box;
+  
+  }
+  
+  .msa-button7 {
+    padding: 10px;
+    cursor: url(h_1.png) 0 0, auto;
+    transition: all 0.msa-3s ease-out;}
+  
+  
+  
+  .msa-overlay7 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.51);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+  }
+  .msa-overlay7:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .msa-popup7 { 
+    z-index: 10000px;
+    margin: 70px auto;
+    padding: 20px;
+    background: linear-gradient(53deg, rgba(22,0,255,1) 0%, rgba(184,37,255,1) 53%, rgba(255,0,146,1) 100%);
+    width:500px;
+    height: 500px;
+    border-radius: 500px;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .msa-popup7 .msa-close7 {
+    position: absolute;
+    top: 40px;
+    right: 260px;
+    font-size: 40px;
+    color: #fff;
+    transition: all 200ms;
+    font-weight: bold;
+    text-decoration: none;
+
+  }
+  .msa-popup7 .msa-close7:hover {
+    color: #3462FA;
+  }
+  .msa-popup7 .msa-content7 {
+    max-height: 30%;
+    
+    font-size:.9em;
+  }
+  
+  .msa-container7 {
+    width:500px;
+    height: 900px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  
+  
+
+
+  
+.msa-box8 {
+  z-index: 0;
+  position: absolute;
+  
+    margin: 0 auto;
+  
+  margin-top: -130px;
+  margin-left: 1120px;
+  
+    background-clip: padding-box;
+  
+  }
+  
+  .msa-button8 {
+    padding: 10px;
+    cursor: url(h_1.png) 0 0, auto;
+    transition: all 0.msa-3s ease-out;}
+  
+  
+  
+  .msa-overlay8 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.51);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+  }
+  .msa-overlay8:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .msa-popup8 { 
+    z-index: 10000px;
+    margin: 70px auto;
+    padding: 20px;
+    background: linear-gradient(53deg, rgba(22,0,255,1) 0%, rgba(184,37,255,1) 53%, rgba(255,0,146,1) 100%);
+    width:500px;
+    height: 500px;
+    border-radius: 500px;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .msa-popup8 .msa-close8 {
+    position: absolute;
+    top: 40px;
+    right: 260px;
+    font-size: 40px;
+    color: #fff;
+    transition: all 200ms;
+    font-weight: bold;
+    text-decoration: none;
+
+  }
+  .msa-popup8 .msa-close8:hover {
+    color: #3462FA;
+  }
+  .msa-popup8 .msa-content8 {
+    max-height: 30%;
+    
+    font-size:.9em;
+  }
+  
+  .msa-container8 {
+    width:500px;
+    height: 900px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+
+
+
+
+
+
+  
+.msa-box9 {
+  z-index: 0;
+  position: absolute;
+  
+    margin: 0 auto;
+  
+  margin-top: -80px;
+  margin-left: 1120px;
+  
+    background-clip: padding-box;
+  
+  }
+  
+  .msa-button9 {
+    padding: 10px;
+    cursor: url(h_1.png) 0 0, auto;
+    transition: all 0.msa-3s ease-out;}
+  
+  
+  
+  .msa-overlay9 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.51);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+  }
+  .msa-overlay9:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .msa-popup9 { 
+    z-index: 10000px;
+    margin: 70px auto;
+    padding: 20px;
+    background: linear-gradient(53deg, rgba(22,0,255,1) 0%, rgba(184,37,255,1) 53%, rgba(255,0,146,1) 100%);
+    width:500px;
+    height: 500px;
+    border-radius: 500px;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .msa-popup9 .msa-close9 {
+    position: absolute;
+    top: 40px;
+    right: 260px;
+    font-size: 40px;
+    color: #fff;
+    transition: all 200ms;
+    font-weight: bold;
+    text-decoration: none;
+
+  }
+  .msa-popup9 .msa-close9:hover {
+    color: #3462FA;
+  }
+  .msa-popup9 .msa-content9 {
+    max-height: 30%;
+    
+    font-size:.9em;
+  }
+  
+  .msa-container9 {
+    width:500px;
+    height: 900px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+
+  .sample_image  img {
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1); 
+    -o-transform:scale(1);  
+    transform:scale(1);
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+.sample_image:hover img {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);   
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+    
+    z-index: 100;
+}
+
+
+
+html{
+  cursor: url(h_1.png) 0 0, auto;}
+
+  
+a{
+  cursor: url(h_1.png) 0 0, auto;}
+
+body{
+  cursor: url(h_1.png) 0 0, auto;}
+
+#fff
