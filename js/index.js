@@ -69,12 +69,12 @@ $(function () {
     
     if(scrollPosition>=12153){
       fadeout.animate({opacity: "0"}, 2000);
-      $el.find('.scene').removeClass(scene);
+ 
     
     
     }else if(scrollPosition<=12153){
      fadeout.animate({opacity: "1"}, 2000);
-     $el.find('.scene').addClass(scene);
+    
     
     }
     
