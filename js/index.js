@@ -58,25 +58,7 @@ $(function () {
     }
     
     
-    var scrollPosition = window.scrollY || document.documentElement.scrollTop;
     
-    
-    if(scrollPosition>0){
-    
-      console.log(scrollPosition);
-    
-    }
-    
-    if(scrollPosition>=12153){
-      fadeout.animate({opacity: "0"}, 2000);
- 
-    
-    
-    }else if(scrollPosition<=12153){
-     fadeout.animate({opacity: "1"}, 2000);
-    
-    
-    }
     
     }
     }
@@ -156,4 +138,3 @@ $(function () {
 
     
 
-    

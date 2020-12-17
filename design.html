@@ -2,702 +2,41 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <link rel="stylesheet" href="dist/aos.css" />
+
 <head>
   <meta charset="utf-8" />
 
   <title></title>
-  <style>
-    @import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
-    .scroll-downs {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  margin-top: 630px;
   
-  width :34px;
-  height: 55px;
-}
-.mousey {
-  width: 3px;
-  padding: 3px 10px;
-  height: 35px;
-  border: 2px solid #fff;
-  border-radius: 25px;
-  opacity: 0.75;
-  box-sizing: content-box;
-}
-.scroller {
-  width: 3px;
-  height: 10px;
-  border-radius: 25%;
-  background-color: #fff;
-  animation-name: scroll;
-  animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-  animation-iteration-count: infinite;
-}
-@keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
-}
-    .aos-all {
-  width: 100%;
-  max-width: 98%;
-  margin: 10vh auto 0 auto;
-  box-sizing: border-box;
-}
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="stylesheet" type="text/css" href="css/design.css">
 
-.aos-item {
-  margin-top: 80px;
-  display: inline-block;
-  float: left;
-  width: 40%;
-  height: 700px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.aos-item_img {margin-top: 80px;
-  display: inline-block;
-  float: left;
-  width: 850px;
-  height: 700px;
-  padding: 20px;
-  background-image: url("img/i.png");
-  background-size:contain;
-  box-sizing: border-box;
-  background-repeat: no-repeat;
-}
-
-.aos-item__inner {
-  font-family: 'Noto Sans Korean';
-  width: 100%;
-  height: 100%;
-  float: left;
-display: flex;
-
-  text-align: left;
-  color: #fff;
-}
-
-.text1{
-  font-size:15px;
-  font-weight: 200;
-line-height: 25pt;
-
-
-}
-.t1{
-margin-bottom: 60px;
-  font-size:70px;
-  font-weight: 900;
-
-}
-
-@media screen and (max-width: 800px) {
-  .aos-item {
-
-    width: 50%;
-  }
-}
-    body {
-      background-color: black;
-      font-family: 'Noto Sans Korean';
-   
-      overflow-x:hidden;
-
-      -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-      color: #fff;
-
-
-    }    body::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
-}
-
-    #name {
-      font-weight: 900;
-      font-size: 60px;
-      margin-top: 200px;
-      margin-left: 50px;
-    }
-
-    #name_pro {
-
-      margin-left: 230px;
-      margin-top: 50px;
-      background: linear-gradient(90deg, rgba(131, 177, 131, 1) 0%, rgba(186, 95, 190, 1) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      width: 500px;
-    }
-
-   
-
-
-
-    #space {
-      font-weight: 900;
-      color: #fff;
-      font-size: 40px;
-      margin-left: 1350px;
-      margin-top: 250px;
-
-    }
-
-    #circle{
-width: 700px;
-        margin-left: 800px;
-        margin-top: 20px;
-
-    }
-
-    #button{
-margin-left: 400px;
-margin-top: -58px;}
-
-#index{
-
-display: block;
-margin-top:30px;
-position: absolute;
-}
-
-#name_19{
-
-    font-weight: 900;
-    font-size: 40px;
-    margin-top: -250px;
-    margin-left: 50px;
-}
-
-
-.newburgerintown {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 40vh;
-      width: 50%;
-      min-width: 400px;
-      height: 60px;
-      margin: 0 auto;
-
-    }
-
-    .newburgerintown h1 {
-      font-weight: 300;
-      color: #ECF0F1;
-    }
-
-    .newburgerintown p {
-      font-weight: 100;
-      color: #ECF0F1;
-      letter-spacing: .1em;
-
-    }
-
-    /**Mobile (Hamburger-)Menu from here on**/
-
-    /** This is kind of a styled trigger here **/
-    #menuToggle {
-      display: block;
-      position: fixed;
-      top: 30px;
-      left: 1450px;
-      z-index: 1000;
-      -webkit-user-select: none;
-      user-select: none;
-    }
-
-    #menuToggle input {
-      display: block;
-      width: 40px;
-      height: 32px;
-      position: absolute;
-      top: -7px;
-      left: -5px;
-      cursor: pointer;
-      opacity: 0;
-      z-index: 2;
-      -webkit-touch-callout: none;
-    }
-
-    #menuToggle span {
-      display: block;
-      width: 30px;
-      height: 4px;
-      margin-bottom: 5px;
-      position: relative;
-      background: #ECF0F1;
-      border-radius: 5px;
-      z-index: 1;
-      transform-origin: 3px 0px;
-      transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        opacity 0.55s ease;
-    }
-
-    #menuToggle span:first-child {
-      transform-origin: 0% 0%;
-    }
-
-    #menuToggle span:nth-last-child(2) {
-      transform-origin: 0% 100%;
-    }
-
-    #menuToggle input:checked~span {
-      opacity: 1;
-      transform: rotate(45deg) translate(-2px, -1px);
-      background: #fff;
-    }
-
-    #menuToggle input:checked~span:nth-last-child(3) {
-      opacity: 0;
-      transform: rotate(0deg) scale(0.2, 0.2);
-    }
-
-    #menuToggle input:checked~span:nth-last-child(2) {
-      opacity: 1;
-      transform: rotate(-45deg) translate(0, -1px);
-    }
-
-    /*This is the Menu part, which gets triggered by toggle*/
-    #menu {
-      font-weight: 900;
-      font-size: 60px;
-      position: absolute;
-      width: 100vw;
-      height: 110vh;
-      margin: -100px 0 0 -1600px;
-      padding: 80px;
-      padding-top: 125px;
-      background: #232323;
-      list-style-type: none;
-      transform-origin: 0 0;
-      transform: translate(-100%, 0);
-      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-      text-align: center;
-      font-family: 'Noto Sans Korean';
-      color: #fff;
-    }
-
-    #menu li {
-      font-family: 'Noto Sans Korean';
-      float: left;
-
-      z-index: 802000;
-      padding: 15px 0;
-      color: #fff;
-      list-style-type: none;
-      font-size: 40px;
-      font-weight: 900;
-      margin-left: 80px;
-      position: relative;
-      display: inline;
-      margin-top: 220px;
-    }
-
-    #menu li a {
-      margin-left: 200px;
-      font-family: 'Noto Sans Korean';
-      color: #fff;
-      text-decoration: none;
-      text-transformation: uppercase;
-    }
-
-    #menu li a:hover {
-
-      font-family: 'Noto Sans Korean';
-      color: #8C8C8C;
-      text-decoration: none;
-    }
-
-    #menuToggle input:checked~ul {
-      transform: scale(1.0, 1.0);
-      opacity: 1;
-    }
-
-    .menu_name {
-      display: inline;
-      color: #fff;
-      font-size: 40px;
-      margin-left: -1370px;
-      margin-top: -50px;
-      position: absolute;
-
-    }
-
-    .space_1 {
-      display: inline;
-      color: #fff;
-      font-size: 40px;
-      margin-left: -40px;
-      margin-top: 520px;
-      position: absolute;
-
-    }
-
-    #lay2 {
-
-      margin-top: -500px;
-      width: 1000px;
-    }
-
-    /* .scene {
-  position: relative;
-  height: 100%;
-  background: red;
-  padding: 20rem;
-  text-align: center;
-} */
-
-
-
-    .scope {
-
-      z-index: 10001;
-      position: absolute;
-      top: calc(50% - 10rem);
-      left: calc(50% - 10rem);
-      width: 20rem;
-      height: 20rem;
-      background: url("img/bg.png") no-repeat fixed;
-      background-size: cover;
-      background-position: center;
-      border-radius: 50%;
-    }
-
-    .path {
-  stroke-dasharray: 100;
-  animation: dash 5s linear;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 1000;
-  }
-}
-
-
-
-
-.aos-all{
-
-
-
-}
-
-#hero-slides {
-
-	 --page: 0;
-     
-	 height: 100vh;
-	
-}
- #hero-slides #header {
-	 height: 12vh;
-     width: 200px;
-	 line-height: 12vh;
-	 padding: 0 3vw;
-	 position: relative;
-}
-
-
-
- #hero-slides #slides-cont {
-	 position: relative;
-	 --button-height: 6vh;
-	 --button-spacing: 0.2vh;
-}
- #hero-slides #slides-cont .button {
-	 width: 5vw;
-	 height: var(--button-height);
-color: black;
-background-color: white;
-	 position: absolute;
-	 right: 5.375vw;
-	 top: 38vh;
-	 z-index: 100;
-	 cursor: pointer;
-}
- #hero-slides #slides-cont .button:before, #hero-slides #slides-cont .button:after {
-	 line-height: var(--button-height);
-	 position: absolute;
-	 margin-left: -0.25vw;
-	 pointer-events: none;
-	 transform: scale(0.75, 1.5);
-	 transition: 125ms ease-in-out;
-}
- #hero-slides #slides-cont .button:before {
-	 left: 50%;
-}
- #hero-slides #slides-cont .button:after {
-	 opacity: 0;
-}
- #hero-slides #slides-cont .button:hover:before, #hero-slides #slides-cont .button:hover:after {
-	 transition: 250ms ease-in-out;
-}
- #hero-slides #slides-cont .button:hover:before {
-	 opacity: 0;
-}
- #hero-slides #slides-cont .button:hover:after {
-	 left: 50% !important;
-	 opacity: 1;
-}
- #hero-slides #slides-cont #next {
-	 margin-top: calc(-1 * (var(--button-height) + var(--button-spacing)));
-}
- #hero-slides #slides-cont #next:before, #hero-slides #slides-cont #next:after {
-	 content: '>';
-}
- #hero-slides #slides-cont #next:after {
-	 left: 30%;
-}
- #hero-slides #slides-cont #next:hover:before {
-	 left: 70%;
-}
- #hero-slides #slides-cont #prev {
-	 margin-top: var(--button-spacing);
-	 opacity: calc(var(--page) + 0.5);
-	 transition: 500ms opacity;
-}
- #hero-slides #slides-cont #prev:before, #hero-slides #slides-cont #prev:after {
-	 content: '<';
-}
- #hero-slides #slides-cont #prev:after {
-	 left: 70%;
-}
- #hero-slides #slides-cont #prev:hover:before {
-	 left: 30%;
-}
- #hero-slides #slides-cont #next-catch, #hero-slides #slides-cont #prev-catch {
-	 width: 10vw;
-	 height: 76vh;
-	 position: absolute;
-	 top: 0;
-	 z-index: 90;
-}
- #hero-slides #slides-cont #next-catch {
-	 right: 0;
-}
- #hero-slides #slides-cont #prev-catch {
-	 left: 0;
-}
- #hero-slides #slides {
-	 --slides-height: 500px;
-	 width: auto;
-	 height: var(--slides-height);
-	 padding: 0 10vw;
-	 font-size: 0;
-	 white-space: nowrap;
-	 position: absolute;
-	 transform: translate3D(calc(var(--page) * -80vw), 0, 0);
-	 transition: 1500ms transform cubic-bezier(0.7, 0, 0.3, 1);
-}
- #hero-slides #slides .slide {
-	 display: inline-block;
-	 vertical-align: top;
-	 font-size: 1.5vw;
-	 width: 500px;
-	 height: var(--slides-height);
-	 margin: 0 1.333em;
-	 background: #101419;
-	 color: rgb(0, 0, 0);
-	 background-size: cover;
-	 background-position: center;
-	 white-space: normal;
-	 word-break: break-word;
-	 position: relative;
-}
- #hero-slides #slides .slide:before {
-	 content: '';
-	 display: block;
-	 background: linear-gradient(180deg, rgba(90, 36, 36, 0) 0%, rgba(43, 43, 43, 0.7) 100%);
-	 opacity: 0;
-	 position: absolute;
-	 top: 0;
-	 left: 0;
-	 right: 0;
-	 bottom: 0;
-}
- #hero-slides #slides .slide .number {
-	 position: absolute;
-	 top: 2em;
-	 left: 2em;
-}
- #hero-slides #slides .slide .number, #hero-slides #slides .slide .number:before, #hero-slides #slides .slide .number:after {
-	 vertical-align: middle;
-}
- #hero-slides #slides .slide .number:before, #hero-slides #slides .slide .number:after {
-	 display: inline-block;
-	 content: '';
-	 height: 0.133em;
-	 margin-top: -0.2em;
-	 background: rgb(0, 0, 0);
-}
- #hero-slides #slides .slide .number:before {
-	 width: 0;
-	 margin-left: 0;
-}
- #hero-slides #slides .slide .number:after {
-	 width: 3em;
-	 margin-left: 1em;
-}
- #hero-slides #slides .slide .body {
-	 position: absolute;
-	 bottom: 2em;
-	 left: 2em;
-	 right: 2em;
-}
- #hero-slides #slides .slide .location, #hero-slides #slides .slide .headline {
-	 position: relative;
-	 bottom: 0;
-	 cursor: default;
-}
- #hero-slides #slides .slide:before, #hero-slides #slides .slide .number:before, #hero-slides #slides .slide .number:after, #hero-slides #slides .slide .location, #hero-slides #slides .slide .headline, #hero-slides #slides .slide .link {
-	 transition: 375ms cubic-bezier(0.7, 0, 0.3, 1);
-}
- #hero-slides #slides .slide .location {
-	 font-weight: 100;
-	 margin-bottom: 1.5em;
-	 transition-delay: 60ms;
-}
- #hero-slides #slides .slide .headline {
-	 font-size: 2.667em;
-	 font-weight: 900;
-	 transition-delay: 50ms;
-}
- #hero-slides #slides .slide .link {
-	 display: inline-block;
-
-	 padding: 0.5em 1.25em;
-	 font-size: 1.33em;
-	 opacity: 0;
-	 position: absolute;
-	 bottom: -2em;
-	 pointer-events: none;
-	 transition-delay: 25ms;
-}
- #hero-slides #slides .slide.hover:before, #hero-slides #slides .slide:hover:before {
-	 opacity: 1;
-}
- #hero-slides #slides .slide.hover:before, #hero-slides #slides .slide:hover:before, #hero-slides #slides .slide.hover .number:before, #hero-slides #slides .slide:hover .number:before, #hero-slides #slides .slide.hover .number:after, #hero-slides #slides .slide:hover .number:after, #hero-slides #slides .slide.hover .location, #hero-slides #slides .slide:hover .location, #hero-slides #slides .slide.hover .headline, #hero-slides #slides .slide:hover .headline, #hero-slides #slides .slide.hover .link, #hero-slides #slides .slide:hover .link {
-	 transition: 500ms cubic-bezier(0.7, 0, 0.3, 1);
-}
- #hero-slides #slides .slide.hover .number:before, #hero-slides #slides .slide:hover .number:before {
-	 width: 3em;
-	 margin-right: 1em;
-}
- #hero-slides #slides .slide.hover .number:after, #hero-slides #slides .slide:hover .number:after {
-	 width: 0;
-	 margin-right: 0;
-}
- #hero-slides #slides .slide.hover .location, #hero-slides #slides .slide:hover .location {
-	 transition-delay: 0;
-	 bottom: 4em;
-}
- #hero-slides #slides .slide.hover .headline, #hero-slides #slides .slide:hover .headline {
-	 transition-delay: 100ms;
-	 bottom: 1.5em;
-}
- #hero-slides #slides .slide.hover .link, #hero-slides #slides .slide:hover .link {
-	 bottom: 0;
-	 opacity: 1;
-	 transition-delay: 250ms;
-	 pointer-events: auto;
-}
- #hero-slides #footer {
-	 height: 12vh;
-	 font-size: 1vh;
-}
- #hero-slides #footer #dribbble {
-	 border-radius: 2vh;
-	 position: absolute;
-	 bottom: 4vh;
-	 right: 4vh;
-	 transition: 300ms cubic-bezier(0.7, 0, 0.3, 1);
-	 padding-left: 1.5vh;
-}
- #hero-slides #footer #dribbble:before, #hero-slides #footer #dribbble:after {
-	 vertical-align: middle;
-	 transition: inherit;
-}
- #hero-slides #footer #dribbble:before {
-	 display: inline;
-	 content: 'View original Dribbble';
-	 font-size: 2vh;
-	 opacity: 0;
-	 transform: translate3D(-200px, 0, 0);
-}
- #hero-slides #footer #dribbble:after {
-	 content: '';
-	 display: inline-block;
-	 width: 4vh;
-	 height: 4vh;
-	 margin-left: 1vh;
-	 background-image: url(https://alca.tv/static/u/82fde61b-28ef-4f17-976e-8f1abb5a1165.png);
-	 background-size: contain;
-	 background-position: center;
-}
-
- #hero-slides #footer #dribbble.hover:before, #hero-slides #footer #dribbble:hover:before {
-	 opacity: 1;
-	 transform: translate3D(0, 0, 0);
-	 transition-delay: 50ms;
-}
- #hero-slides #footer #dribbble.hover:after, #hero-slides #footer #dribbble:hover:after {
-	 filter: saturate(0%) contrast(200%) brightness(200%) invert(100%);
-}
- @media (min-width: 1200px) and (max-width: 1699px) {
-	 body {
-		 --slides-per-page: 3;
-	}
-	 #hero-slides #slides .slide {
-		 font-size: 1vw;
-	}
-}
- @media (min-width: 1700px) {
-	 body {
-		 --slide-per-age: 4;
-
-	}
-	 #hero-slides #slides .slide {
-		 font-size: 0.75vw;
-	}
-}
- 
-  </style>
-
+  
 <body>
-    <div id="index">
-  <div id="name">
-    LOGO,<br>
-    LINE LOGO</div>
-    <div id="button">
-       <img src="img/button.png" width="150px">
-    </div>
-  <div id="name_pro">키워드 3가지와 색을 조합하여,<br>
-라인으로 이루어진 로고를 디자인 했습니다. </div>
-</div>
-<div id="circle">
-  <?xml version="1.0" encoding="utf-8"?>
-  <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-  <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-     y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-  <g>
-    <g>
-      <defs>
-        <polygon id="SVGID_1_" points="-15,12.85 1016,12.85 1016,1044 -15,1044 -15,12.85 			"/>
-      </defs>
-      <clipPath id="SVGID_2_">
-        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-      </clipPath>
-      <g style="clip-path:url(#SVGID_2_);">
-        
-          <image style="overflow:visible;" width="800" height="800" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyMAAAMjCAYAAAC208/FAAAACXBIWXMAAAicAAAInAFgyRpVAAAA
+  <div id="index">
+    <div id="name">
+      LOGO,<br>
+      LINE LOGO</div>
+
+    <div id="name_pro">키워드 3가지와 색을 조합하여,<br>
+      라인으로 이루어진 로고를 디자인 했습니다. </div>
+  </div>
+  <div id="circle">
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+      y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+      <g>
+        <g>
+          <defs>
+            <polygon id="SVGID_1_" points="-15,12.85 1016,12.85 1016,1044 -15,1044 -15,12.85" />
+          </defs>
+          <clipPath id="SVGID_2_">
+            <use xlink:href="#SVGID_1_" style="overflow:visible;" />
+          </clipPath>
+          <g style="clip-path:url(#SVGID_2_);">
+
+            <image style="overflow:visible;" width="800" height="800" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyMAAAMjCAYAAAC208/FAAAACXBIWXMAAAicAAAInAFgyRpVAAAA
   GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAABaxxJREFUeNrs3QlgVNXZPvD3vTNZ
   CdnYNwFBcdfW3boCrixaK/y7WGu/CkGrtRYBFTWNigpILZ9W2Wxrt6/VtlYI1g0UtdW64EZRlFX2
   JSSBQNa57/85d7LMJJNqZUvC84OTe+fOZObOzb1nzjtnEyEiIiIiIiIiIiIiIiIiIiIiIiIiIiIi
@@ -2329,24 +1668,26 @@ background-color: white;
   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-  AAAAAAAAAAAAAAAAAAAAAAAAAAD83v2PAAMAxBDLMeo96xgAAAAASUVORK5CYII=" transform="matrix(1.2888 0 0 1.2889 -15.0041 12.8524)">
-        </image>
+  AAAAAAAAAAAAAAAAAAAAAAAAAAD83v2PAAMAxBDLMeo96xgAAAAASUVORK5CYII="
+              transform="matrix(1.2888 0 0 1.2889 -15.0041 12.8524)">
+            </image>
+          </g>
+        </g>
       </g>
-    </g>
-  </g>
-  </svg>
-  
-</div>
-<div id="name_19">
-    19-LG
-</div>   
+    </svg>
 
-<div id="space">00-20</div>
-<div class="scroll-downs">
-  <div class="mousey">
-    <div class="scroller"></div>
   </div>
-</div>
+  <div id="name_19">
+    19-LG
+  </div>
+
+  <div id="space">00-20</div>
+
+  <div class="scroll-downs">
+    <div class="mousey">
+      <div class="scroller"></div>
+    </div>
+  </div>
 
   <nav class="mobilescreen">
     <div title="Menu" id="menuToggle">
@@ -2359,15 +1700,16 @@ background-color: white;
       <span></span>
       <ul id="menu">
         <li>
-          <a href="programming.html">PROGRAMMING
+
+          <a href="programming_menu.html">PROGRAMMING
           </a>
         </li>
-        <li><a href="video.html">VIDEO
+        <li><a href="video_menu.html">VIDEO
           </a>
         </li>
-        <li><a href="design.html">DESIGN
+        <li><a href="design_menu.html">DESIGN
           </a>
-          
+
         </li>
         <div class="menu_name">
           MENU
@@ -2387,461 +1729,166 @@ background-color: white;
               google_ad_width = 728;
               google_ad_height = 90;
         //-->
-            <!-- </script> --> 
-                       <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-                       </script>
-                     </div>
-                     <div class="scope"></div>
-                   </div>
-                 </ul>
-           
-               </div>
-             </nav>
-            
+            <!-- </script> -->
+            <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+          </div>
+          <div class="scope"></div>
+        </div>
+      </ul>
 
-<div id="hero-slides">
-  <div id="header">
+    </div>
+  </nav>
+
+
+  <div id="hero-slides">
+    <div id="header">
       <div id="logo"></div>
       <div id="menu">
-          <div id="hamburger">
-              <div class="slice"></div>
-              <div class="slice"></div>
-              <div class="slice"></div>
-          </div>
+        <div id="hamburger">
+          <div class="slice"></div>
+          <div class="slice"></div>
+          <div class="slice"></div>
+        </div>
       </div>
-  </div>
-  <div id="slides-cont">
+    </div>
+    <div id="slides-cont">
       <div class="button" id="next"></div>
       <div class="button" id="prev"></div>
       <div id="slides">
-          <div class="slide" style="background-image: url(img/logo_1.jpg)">
-              <div class="number">01</div>
-              <div class="body">
-                  <div class="location">#키워드1, #키워드1, #키워드1</div>
-                 
-              </div>
+        <div class="slide" style="background-image: url(img/logo4.gif)">
+          <div class="number">01</div>
+          <div class="body">
+            <div class="location">#눈, #달, #벚꽃</div>
+
           </div>
-          <div class="slide" style="background-image: url(img/logo_2.gif)">
-              <div class="number">02</div>
-              <div class="body">
-                <div class="location">#키워드1, #키워드1, #키워드1</div>
-      
-               
-              </div>
+        </div>
+        <div class="slide" style="background-image: url(img/logo_2.gif)">
+          <div class="number">02</div>
+          <div class="body">
+            <div class="location">#날개, #보석, #반짝임 </div>
+
+
           </div>
-          <div class="slide" style="background-image: url(img/logo_3.jpg)">
-              <div class="number">03</div>
-              <div class="body">
-                <div class="location">#키워드1, #키워드1, #키워드1</div>
-              
-               
-              </div>
+        </div>
+        <div class="slide" style="background-image: url(img/logo_3.jpg)">
+          <div class="number">03</div>
+          <div class="body">
+            <div class="location">#달, #구름, #월계수1</div>
+
+
           </div>
-          <div class="slide" style="background-image: url(https://alca.tv/static/u/10cfd52d-e217-41e9-bb8b-ad43384a5e63_opt.png)">
-              <div class="number">04</div>
-              <div class="body">
-                <div class="location">#키워드1, #키워드1, #키워드1</div>
-                 
-                
-              </div>
+        </div>
+        <div class="slide" style="background-image: url(img/logo8.jpg)">
+          <div class="number">04</div>
+          <div class="body">
+            <div class="location">#아이스크림, #체리, #곰돌이</div>
+
+
           </div>
-          <div class="slide" style="background-image: url(https://alca.tv/static/u/b9669f2a-17fc-47dc-b6b5-3f863004efa8_opt.png)">
-              <div class="number">05</div>
-              <div class="body">
-                <div class="location">#키워드1, #키워드1, #키워드1</div>
-                
-                 
-              </div>
+        </div>
+        <div class="slide" style="background-image: url(img/logo5.jpg)">
+          <div class="number">05</div>
+          <div class="body">
+            <div class="location">#날개, #바다, #구름</div>
+
+
           </div>
-          <div class="slide" style="background-image: url(https://alca.tv/static/u/31979576-5060-4513-aae2-b379b87e7fe6_opt.png)">
-              <div class="number">06</div>
-              <div class="body">
-                <div class="location">#키워드1, #키워드1, #키워드1</div>
-               
-              </div>
+        </div>
+        <div class="slide" style="background-image: url(img/logo6.jpg)">
+          <div class="number">06</div>
+          <div class="body">
+            <div class="location">#아이스크림, #반창고, #반짝임</div>
+
           </div>
-          <div class="slide" style="background-image: url(https://alca.tv/static/u/429b83b8-1ad4-4450-b0de-0a0c1073cf1e_opt.jpg)">
-              <div class="number">07</div>
-              <div class="body">
-                <div class="location">#키워드1, #키워드1, #키워드1</div>
-              
-                  
-              </div>
+        </div>
+        <div class="slide" style="background-image: url(img/logo7.jpg)">
+          <div class="number">07</div>
+          <div class="body">
+            <div class="location">#리본, #하트, #십자가</div>
+
+
           </div>
+        </div>
       </div>
       <div id="next-catch"></div>
       <div id="prev-catch"></div>
+    </div>
+
+
   </div>
-  <div id="footer">
-      <a href="https://dribbble.com/shots/3888265-Motion-Study" target="_blank">
-          <div id="dribbble"></div>
-      </a>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+
+  </script>
+
+
+  <div id="transcroller-body" class="aos-all">
+    <div class="aos-item" data-aos="fade-up">
+      <div class="aos-item__inner">
+        <div class="text1">
+          <div class="t1">#1</div>
+          로고만 보더라도 키워드 3가지가 바로 떠오를 수 있게<br> 직관적인 디자인을 했습니다.
+        </div>
+      </div>
+    </div>
+    <div class="aos-item_img" data-aos="fade-down">
+      <div class="aos-item__inner"></div>
+    </div>
+    <div class="aos-item_img2" data-aos="zoom-out-down">
+      <div class="aos-item__inner"></div>
+    </div>
+    <div class="aos-item" data-aos="flip-down">
+      <div class="aos-item__inner">
+
+        <div class="text1">
+
+          <div class="t1">#2</div>
+
+          "날개", "달", "구름" 으로 디자인한 로고 입니다.
+
+        </div>
+
+
+      </div>
+    </div>
+
   </div>
-</div>
-<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-            <script>
-      
-      let hero = document.getElementById('hero-slides');
-let menu = document.getElementById('menu');
-let slides = document.getElementById('slides');
-let dribbble = document.getElementById('dribbble');
-let next = [ 'next', 'next-catch' ].map(n => document.getElementById(n));
-let prev = [ 'prev', 'prev-catch' ].map(n => document.getElementById(n));
-let slideChildren = slides.children;
-let slideCount = slides.children.length;
-let currentlyDemoing = false;
-let currentPage = 0;
-let slidesPerPage = () => window.innerWidth > 2000 ? 4 : window.innerWidth > 1600 ? 3 : 2;
-let maxPageCount = () => slideCount / slidesPerPage() - 1;
+  </div>
+  <div class="aos-item" data-aos="flip-up">
+    <div class="aos-item__inner">
 
-function goToPage(pageNumber = 0) {
-	currentPage = Math.min(maxPageCount(), Math.max(0, pageNumber));
-	console.log(currentPage);
-	hero.style.setProperty('--page', currentPage);
-}
+      <div class="text1">
 
-function sleep(time) {
-	return new Promise(res => setTimeout(res, time));
-}
+        <div class="t1">#3</div>
 
-function hoverSlide(index) {
-	index in slideChildren &&
-		slideChildren[index].classList.add('hover');
-}
+        "꽃", "월계수 잎", "반짝임" 으로 디자인한 로고 입니다.
+      </div>
 
-function unhoverSlide(index) {
-	index in slideChildren &&
-		slideChildren[index].classList.remove('hover');
-}
 
-async function demo() {
-	if(currentlyDemoing) {
-		return;
-	}
-	currentlyDemoing = true;
-	if(currentPage !== 0) {
-		goToPage(0);
-		await sleep(800);
-	}
-	let slides = slidesPerPage();
-	let pageSeq_ = { 2: [ 1, 2, 1 ], 3: [ 1, 2, 1 / 3 ], 4: [ 1, 1, 0 ] };
-	let pageSeq = pageSeq_[slides] || pageSeq_[4];
-	let slideSeq_ = { 2: [ 2, 4, 3 ], 3: [ 3, 6, 2 ], 4: [ 3, 6, 2 ] };
-	let slideSeq = slideSeq_[slides] || slideSeq_[2];
-	await sleep(300);
-	goToPage(pageSeq[0]);
-	await sleep(500);
-	hoverSlide(slideSeq[0]);
-	await sleep(1200);
-	goToPage(pageSeq[1]);
-	dribbble.classList.add('hover');
-	unhoverSlide(slideSeq[0]);
-	await sleep(500);
-	hoverSlide(slideSeq[1]);
-	await sleep(1200);
-	goToPage(pageSeq[2]);
-	unhoverSlide(slideSeq[1]);
-	await sleep(300);
-	hoverSlide(slideSeq[2]);
-	await sleep(1600);
-	goToPage(0);
-	unhoverSlide(slideSeq[2]);
-	dribbble.classList.remove('hover');
-	currentlyDemoing = false;
-}
+    </div>
+  </div>
+  <div class="aos-item_img3" data-aos="fade-down">
+    <div class="aos-item__inner"></div>
+  </div>
 
-next.forEach(n => n.addEventListener('click', () => !currentlyDemoing && goToPage(currentPage + 1)));
-prev.forEach(n => n.addEventListener('click', () => !currentlyDemoing && goToPage(currentPage - 1)));
-menu.addEventListener('click', demo);
+  </div>
 
-sleep(100).then(demo);
+  <script src="dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
-// window.addEventListener('resize', () => {
-	// console.log(document.body.style.getPropertyValue('--slide-per-page'));
-// });
-
-/* requestAnimationFrame */
-            </script>
-           
-           
-             <div id="transcroller-body" class="aos-all">
-               <div class="aos-item" data-aos="fade-up">
-                 <div class="aos-item__inner"><div class="text1">
-                   <div class="t1">#1</div>
-                   로고만 보더라도 키워드 3가지가 바로 떠오를 수 있게<br> 직관적인 디자인을 했습니다.</div></div>
-               </div>
-               <div class="aos-item_img" data-aos="fade-down">
-                 <div class="aos-item__inner"></div>
-               </div>
-               <div class="aos-item_img" data-aos="zoom-out-down">
-                 <div class="aos-item__inner"></div>
-               </div>
-               <div class="aos-item" data-aos="flip-down">
-                 <div class="aos-item__inner">
-           
-                   <div class="text1">
-           
-                   <div class="t1">#2</div>
-           
-                   "키워드1", "키워드2", "키워드3" 로 디자인한 로고 입니다.
-                 
-                 </div>
-                 
-           
-                 </div>
-               </div>
-           
-                 </div>
-               </div>
-               <div class="aos-item" data-aos="flip-up">
-                 <div class="aos-item__inner">
-           
-                   <div class="text1">
-           
-                     <div class="t1">#3</div>
-             
-                     "키워드1", "키워드2", "키워드3" 로 디자인한 로고 입니다.
-                   </div>
-           
-           
-                 </div>
-               </div>
-               <div class="aos-item_img" data-aos="fade-down">
-                 <div class="aos-item__inner"></div>
-               </div>
-              
-             </div>
-           
-             <script src="dist/aos.js"></script>
-             <script>
-               AOS.init({
-                 easing: 'ease-in-out-sine'
-               });
-             </script>
-            <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-           
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-            <script>
-              var btn = document.querySelector("#circle");
-           var ctx;  
-           
-           var colorInfoElem = document.querySelector("#colorInfo");
-           html2canvas(btn).then(canvas => {
-            ctx = canvas.getContext("2d");
-            
-            createParticleCanvas();
-            
-            btn.addEventListener("click", e => {
-              // Get our color data like before
-              let localX = e.offsetX;
-              let localY = e.offsetY;
-              let rgbaColorArr = ctx.getImageData(localX, localY, 1, 1).data;
-           
-              // Get the button's positioning in terms of the window
-              let bcr = btn.getBoundingClientRect();
-              let globalX = bcr.left + localX;
-              let globalY = bcr.top + localY;
-           
-              // Create a particle using the color we obtained at the window location
-              // that we calculated
-              createParticleAtPoint(globalX, globalY, rgbaColorArr);
-            });
-           });
-           
-           
-           /* An "exploding" particle effect that uses circles */
-           var ExplodingParticle = function() {
-            // Set how long we want our particle to animate for
-            this.animationDuration = 1000; // in ms
-           
-            // Set the speed for our particle
-            this.speed = {
-              x: -5 + Math.random() * 10,
-              y: -5 + Math.random() * 10
-            };
-            
-            // Size our particle
-            this.radius = 5 + Math.random() * 5;
-            
-            // Set a max time to live for our particle
-            this.life = 30 + Math.random() * 10;
-            this.remainingLife = this.life;
-            
-            // This function will be called by our animation logic later on
-            this.draw = ctx => {
-              let p = this;
-           
-              if(this.remainingLife > 0
-              && this.radius > 0) {
-                // Draw a circle at the current location
-                ctx.beginPath();
-                ctx.arc(p.startX, p.startY, p.radius, 0, Math.PI * 2);
-                ctx.fillStyle = "rgba(" + this.rgbArray[0] + ',' + this.rgbArray[1] + ',' + this.rgbArray[2] + ", 1)";
-                ctx.fill();
-                
-                // Update the particle's location and life
-                p.remainingLife--;
-                p.radius -= 0.25;
-                p.startX += p.speed.x;
-                p.startY += p.speed.y;
-              }
-            }
-           }
-           
-           var particles = [];
-           function createParticleAtPoint(x, y, colorData) {
-            let particle = new ExplodingParticle();
-            particle.rgbArray = colorData;
-            particle.startX = x;
-            particle.startY = y;
-            particle.startTime = Date.now();
-            
-            particles.push(particle);
-           }
-           
-           
-           var particleCanvas, particleCtx;
-           function createParticleCanvas() {
-            // Create our canvas
-            particleCanvas = document.createElement("canvas");
-            particleCtx = particleCanvas.getContext("2d");
-            
-            // Size our canvas
-            particleCanvas.width = window.innerWidth;
-            particleCanvas.height = window.innerHeight;
-            
-            // Position out canvas
-            particleCanvas.style.position = "absolute";
-            particleCanvas.style.top = "0";
-            particleCanvas.style.left = "0";
-            
-            // Make sure it's on top of other elements
-            particleCanvas.style.zIndex = "1001";
-            
-            // Make sure other elements under it are clickable
-            particleCanvas.style.pointerEvents = "none";
-            
-            // Add our canvas to the page
-            document.body.appendChild(particleCanvas);
-           }
-           
-           
-           
-           function update() {
-            // Clear out the old particles
-            if(typeof particleCtx !== "undefined") {
-              particleCtx.clearRect(0, 0, window.innerWidth, window.innerHeight);
-            }
-           
-            // Draw all of our particles in their new location
-            for(let i = 0; i < particles.length; i++) {
-              particles[i].draw(particleCtx);
-              
-              // Simple way to clean up if the last particle is done animating
-              if(i === particles.length - 1) {
-                let percent = (Date.now() - particles[i].startTime) / particles[i].animationDuration;
-                
-                if(percent > 1) {
-                  particles = [];
-                }
-              }
-            }
-            
-            // Animate performantly
-            window.requestAnimationFrame(update);
-           }
-           window.requestAnimationFrame(update);
-           var test = $('#name');
-           var test2 = $('#space');
-           var test3 = $('#name_pro');
-           var test4 = $('.moving-grad');
-           
-           var test5 = $('#design');
-           var test6 = $('#video');
-           var test7 = $('#programming');
-           var test8 = $('#button');
-           var test9 = $('#circle');
-           var test10   = $('#name_19');
-           
-           test.animate({opacity: "0"}, 0);
-           test2.animate({opacity: "0"}, 0);
-           test3.animate({opacity: "0"}, 0);
-           test4.animate({opacity: "0"}, 0);
-           test5.animate({opacity: "0"}, 0);
-           test6.animate({opacity: "0"}, 0);
-           test7.animate({opacity: "0"}, 0);
-           test8.animate({opacity: "0"}, 0);
-           test9.animate({opacity: "0"}, 0);
-           test10.animate({opacity: "0"}, 0);
-           
-           setTimeout(function() {test.animate({opacity: "1"}, 2000);}, 500);
-           setTimeout(function() {test2.animate({opacity: "1"}, 2000);}, 500);
-           //   testEle.fadeIn();
-           setTimeout(function() {test3.animate({opacity: "1"}, 1500);}, 600);
-           setTimeout(function() {test4.animate({opacity: "1"}, 1000);}, 100);
-           
-           setTimeout(function() {test5.animate({opacity: "1"}, 1700);}, 100);
-           setTimeout(function() {test6.animate({opacity: "1"}, 1700);}, 100);
-           setTimeout(function() {test7.animate({opacity: "1"}, 1700);}, 100);
-           setTimeout(function() {test8.animate({opacity: "1"}, 2000);}, 900);
-           
-           setTimeout(function() {test9.animate({opacity: "1"}, 1000);}, 90);
-           setTimeout(function() {test10.animate({opacity: "1"}, 2000);}, 500);
-           
-              $(document).ready(function () {
-                var $scope = $(".scope"),
-                  scopeWHalf = $scope.width() / 2;
-                $(document).on("mousemove", function (e) {
-                  $scope.css({ "left": e.pageX - scopeWHalf, "top": e.pageY - scopeWHalf });
-                });
-              });
-              
-            </script>
-           
-            <script type="text/javascript">
-           
-              var _gaq = _gaq || [];
-              _gaq.push(['_setAccount', 'UA-36251023-1']);
-              _gaq.push(['_setDomainName', 'jqueryscript.net']);
-              _gaq.push(['_trackPageview']);
-           
-              (function () {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-              })();
-           
-            </script>
-           
-           
-             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-             <script>
-               $(document).ready(function () {
-                 var $scope = $(".scope"),
-                   scopeWHalf = $scope.width() / 2;
-                 $(document).on("mousemove", function (e) {
-                  $scope.css({ "left": e.clientX - scopeWHalf, "top": e.clientY - scopeWHalf });
-                 });
-               });
-             </script>
-           
-             <script type="text/javascript">
-           
-               var _gaq = _gaq || [];
-               _gaq.push(['_setAccount', 'UA-36251023-1']);
-               _gaq.push(['_setDomainName', 'jqueryscript.net']);
-               _gaq.push(['_trackPageview']);
-           
-               (function () {
-                 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-               })();
-           
-             </script>
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+   
+  </script>
+  <script type="text/javascript" src="js/design.js"></script>
 
 </body>
 

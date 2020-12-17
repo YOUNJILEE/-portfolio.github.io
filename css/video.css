@@ -1,28 +1,161 @@
 @import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
 
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  margin-top: 630px;
+
+  width: 34px;
+  height: 55px;
+}
+
+.mousey {
+  width: 3px;
+  padding: 3px 10px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
 body {
   background-color: black;
   font-family: 'Noto Sans Korean';
-
-
-margin:0;
-  color: #fff;
-
-  -ms-overflow-style: none; /* IE and Edge */
-scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
   color: #fff;
 
 
-}    body::-webkit-scrollbar {
-display: none; /* Chrome, Safari, Opera*/
 }
 
+body::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera*/
+}
 
-.index_main{
+.aos-all {
+  width: 100%;
+  max-width: 98%;
+  margin: 10vh auto 0 auto;
+  box-sizing: border-box;
+}
 
-margin-top: 500px;
+.aos-item {
+  margin-top: 80px;
+  display: inline-block;
+  float: left;
+  width: 40%;
+  height: 700px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.aos-item_img {
+  margin-top: 80px;
+  display: inline-block;
+  float: left;
+  width: 850px;
+  height: 700px;
+  padding: 20px;
+  background-image: url("../img/3D.jpg");
+  background-size: contain;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+.aos-item_img2 {
+  margin-top: 80px;
+  display: inline-block;
+  float: left;
+  width: 850px;
+  height: 700px;
+  padding: 20px;
+  background-image: url("../img/3D1.jpg");
+  background-size: contain;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+.aos-item_img3 {
+  margin-top: 80px;
+  display: inline-block;
+  float: left;
+  width: 850px;
+  height: 700px;
+  padding: 20px;
+  background-image: url("../img/3D2.jpg");
+  background-size: contain;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+.aos-item__inner {
+  font-family: 'Noto Sans Korean';
+  width: 100%;
+  height: 100%;
+  float: left;
+  display: flex;
+
+  text-align: left;
+  color: #fff;
+}
+
+.text1 {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 25pt;
+
 
 }
+
+.t1 {
+  margin-bottom: 60px;
+  font-size: 70px;
+  font-weight: 900;
+
+}
+
+@media screen and (max-width: 800px) {
+  .aos-item {
+
+    width: 50%;
+  }
+}
+
 #name {
   font-weight: 900;
   font-size: 60px;
@@ -32,103 +165,16 @@ margin-top: 500px;
 
 #name_pro {
 
-  margin-left: 50px;
-  margin-top: 10px;
+  margin-left: 230px;
+  margin-top: 50px;
   background: linear-gradient(90deg, rgba(131, 177, 131, 1) 0%, rgba(186, 95, 190, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 300px;
-}
-
-.moving-grad {
-  display: flex;
   width: 500px;
-  height: 500px;
-  background: linear-gradient(90deg, rgba(59, 242, 64, 1) 0%, rgba(75, 37, 171, 1) 52%, rgba(248, 8, 107, 1) 100%);
-  background-size: 200% 200%;
-  animation: MoveGrad 5s ease infinite;
-  align-items: center;
-  justify-content: center;
-  border-radius: 500px;
-  margin-top: -290px;
-  margin-left: 500px;
-  z-index: 200;
-  position: relative;
-}
-
-@keyframes MoveGrad {
-  0% {
-    background-position: 0% 50%
-  }
-
-  50% {
-    background-position: 100% 50%
-  }
-
-  100% {
-    background-position: 0% 50%
-  }
-}
-.button{
-
-  margin-top: -180px;
-  margin-left: 50px;
-  position: absolute;
-}
-#lay {
-
-
-  margin-top: -750px;
-  margin-left: 250px;
-  width: 1000px;
-  z-index: 3;
-
-
-
-  stroke-dasharray: 711;
-  /*이 값은 path의 길이와 동일합니다*/
-  stroke-dashoffset: 711;
-  animation: dash 1.3s linear alternate infinite;
-  stroke-miterlimit: 10;
-}
-
-@keyframes dash {
-  0% {
-    stroke-dashoffset: 711;
-  }
-
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-#design {
-  
-  color: #fff;
-  margin-top: -850px;
-  margin-left: 330px;
-  font-size: 40px;
-  font-weight: 900;
-
-}
-
-#video {
-  font-weight: 900;
-  color: #fff;
-  margin-top: 450px;
-  font-size: 40px;
-  margin-left: 400px;
-
 }
 
 
-#programming {
-  font-weight: 900;
-  color: #fff;
-  margin-top: -300px;
-  font-size: 40px;
-  margin-left: 1050px;
-}
+
 
 
 #space {
@@ -136,9 +182,37 @@ margin-top: 500px;
   color: #fff;
   font-size: 40px;
   margin-left: 1350px;
-  margin-top: 270px;
+  margin-top: 250px;
 
 }
+
+#circle {
+  width: 700px;
+  margin-left: 800px;
+  margin-top: 20px;
+
+}
+
+#button {
+  margin-left: 470px;
+  margin-top: -58px;
+}
+
+#index {
+
+  display: block;
+  margin-top: 30px;
+  position: absolute;
+}
+
+#name_19 {
+
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: -250px;
+  margin-left: 50px;
+}
+
 
 .newburgerintown {
   position: absolute;
@@ -311,8 +385,6 @@ margin-top: 500px;
   width: 1000px;
 }
 
-
-
 /* .scene {
 position: relative;
 height: 100%;
@@ -336,165 +408,44 @@ text-align: center;
   background-position: center;
   border-radius: 50%;
 }
-/* #lay path {
-  fill:#A8A8A8;
-  stroke-dasharray: 1500; 
-  stroke-dashoffset: 1500;
-/* // animation: dash 1.3s linear alternate infinite; */
-/* } */ 
 
-#svg_1 path{
-stroke:#636363;
-stroke-width: 3;
-fill:black;
-
-stroke-dasharray: 2500;
-stroke-dashoffset: 2500;
-animation: dash 5s linear alternate infinite;
+.path {
+  stroke-dasharray: 100;
+  animation: dash 5s linear;
 }
-
 
 @keyframes dash {
-from {
-stroke-dashoffset: 2500;
+  to {
+    stroke-dashoffset: 1000;
+  }
 }
-to {
-stroke-dashoffset: 0;
-}
-}
-
-/* 
-@keyframes dash {
-0% {
-stroke-dashoffset: 711;
-}
-100% {
-stroke-dashoffset: 0;
-}
-} */
-
-
-.dropdown-content {
-display: none;
-position: absolute;
-
-width: 500px;
-z-index: 1;
-}
-.dropdown-content a:hover {color: #fff;font-weight: 400;}
-.dropdown-content a {
-
-color: #6B6B6B;
-font-family: 'Noto Sans Korean';
-margin-left: 330px;
-text-decoration: none;
-display: block;
-font-size:15px;
-  font-weight: 300;
-}
-
-
-.dropdown:hover .dropdown-content {display: block;}
-
-
-.dropdown-content2 {
-display: none;
-position: absolute;
-
-width: 800px;
-z-index: 1;
-}
-.dropdown-content2 a:hover {color: #fff;font-weight: 400;}
-.dropdown-content2 a {
-color: #6B6B6B;
-font-family: 'Noto Sans Korean';
-margin-left: 400px;
-text-decoration: none;
-display: block;
-font-size:15px;
-  font-weight: 300;
-}
-
-
-.dropdown2:hover .dropdown-content2 {display: block;}
-
-.dropdown-content3 {
-display: none;
-position: absolute;
-
-width:1500px;
-z-index: 1;
-}
-.dropdown-content3 a:hover {color: #fff;font-weight: 400;}
-.dropdown-content3 a {
-color: #6B6B6B;
-font-family: 'Noto Sans Korean';
-margin-left: 1050px;
-text-decoration: none;
-display: block;
-font-size:15px;
-  font-weight: 300;
-}
-
-
-.dropdown3:hover .dropdown-content3{display: block;}
 
 
 .section {
- position: relative;
- min-height: 100vh;
+  position: relative;
+  min-height: 100vh;
 }
+
 .scene {
- position: absolute;
- height: 100vh;
- top: 0;
- left: 0;
- right: 0;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
 }
+
 .scene--active {
- position: fixed;
+  position: fixed;
 }
+
 .scene--ended {
- position: absolute;
- bottom: 0;
- top: auto;
+  position: absolute;
+  bottom: 0;
+  top: auto;
 }
+
 .scroll-video__video {
- width: 100%;
- height: 100%;
- object-fit: cover;
-}
-
-
-.scroll-downs {
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-margin: auto;
-margin-top: 630px;
-
-
-width :34px;
-height: 55px;
-}
-.mousey {
-width: 3px;
-padding: 3px 10px;
-height: 35px;
-border: 2px solid #fff;
-border-radius: 25px;
-opacity: 0.75;
-box-sizing: content-box;
-}
-.scroller {
-width: 3px;
-height: 10px;
-border-radius: 25%;
-background-color: #fff;
-animation-name: scroll;
-animation-duration: 2.2s;
-animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-animation-iteration-count: infinite;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

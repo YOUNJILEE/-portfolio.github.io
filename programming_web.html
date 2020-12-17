@@ -1,412 +1,44 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="kr" xmlns="http://www.w3.org/1999/xhtml">
 <link rel="stylesheet" href="dist/aos.css" />
+
 <head>
   <meta charset="utf-8" />
 
   <title></title>
-  <style>
-    @import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
-    .scroll-downs {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  margin-top: 630px;
-  
-  width :34px;
-  height: 55px;
-}
-.mousey {
-  width: 3px;
-  padding: 3px 10px;
-  height: 35px;
-  border: 2px solid #fff;
-  border-radius: 25px;
-  opacity: 0.75;
-  box-sizing: content-box;
-}
-.scroller {
-  width: 3px;
-  height: 10px;
-  border-radius: 25%;
-  background-color: #fff;
-  animation-name: scroll;
-  animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-  animation-iteration-count: infinite;
-}
-@keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
-}
-    body {
-      background-color: black;
-      font-family: 'Noto Sans Korean';
-      -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-      color: #fff;
-
-
-    }    body::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
-}
-
-.aos-all {
-  width: 100%;
-  max-width: 98%;
-  margin: 10vh auto 0 auto;
-  box-sizing: border-box;
-}
-
-.aos-item {
-  margin-top: 80px;
-  display: inline-block;
-  float: left;
-  width: 40%;
-  height: 700px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.aos-item_img {margin-top: 80px;
-  display: inline-block;
-  float: left;
-  width: 850px;
-  height: 700px;
-  padding: 20px;
-  background-image: url("img/i.png");
-  background-size:contain;
-  box-sizing: border-box;
-  background-repeat: no-repeat;
-}
-
-.aos-item__inner {
-  font-family: 'Noto Sans Korean';
-  width: 100%;
-  height: 100%;
-  float: left;
-display: flex;
-
-  text-align: left;
-  color: #fff;
-}
-
-.text1{
-  font-size:15px;
-  font-weight: 200;
-line-height: 25pt;
-
-
-}
-.t1{
-margin-bottom: 60px;
-  font-size:70px;
-  font-weight: 900;
-
-}
-
-@media screen and (max-width: 800px) {
-  .aos-item {
-
-    width: 50%;
-  }
-}
-
-    #name {
-      font-weight: 900;
-      font-size: 60px;
-      margin-top: 200px;
-      margin-left: 50px;
-    }
-
-    #name_pro {
-
-      margin-left: 230px;
-      margin-top: 50px;
-      background: linear-gradient(90deg, rgba(131, 177, 131, 1) 0%, rgba(186, 95, 190, 1) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      width: 500px;
-    }
-
-   
-
-
-
-    #space {
-      font-weight: 900;
-      color: #fff;
-      font-size: 40px;
-      margin-left: 1350px;
-      margin-top: 250px;
-
-    }
-
-    #circle{
-width: 700px;
-        margin-left: 800px;
-        margin-top: 20px;
-
-    }
-
-    #button{
-margin-left: 250px;
-margin-top: -58px;}
-
-#index{
-
-display: block;
-margin-top:30px;
-position: absolute;
-}
-
-#name_19{
-
-    font-weight: 900;
-    font-size: 40px;
-    margin-top: -250px;
-    margin-left: 50px;
-}
-
-
-.newburgerintown {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 40vh;
-      width: 50%;
-      min-width: 400px;
-      height: 60px;
-      margin: 0 auto;
-
-    }
-
-    .newburgerintown h1 {
-      font-weight: 300;
-      color: #ECF0F1;
-    }
-
-    .newburgerintown p {
-      font-weight: 100;
-      color: #ECF0F1;
-      letter-spacing: .1em;
-
-    }
-
-    /**Mobile (Hamburger-)Menu from here on**/
-
-    /** This is kind of a styled trigger here **/
-    #menuToggle {
-      display: block;
-      position: fixed;
-      top: 30px;
-      left: 1450px;
-      z-index: 1000;
-      -webkit-user-select: none;
-      user-select: none;
-    }
-
-    #menuToggle input {
-      display: block;
-      width: 40px;
-      height: 32px;
-      position: absolute;
-      top: -7px;
-      left: -5px;
-      cursor: pointer;
-      opacity: 0;
-      z-index: 2;
-      -webkit-touch-callout: none;
-    }
-
-    #menuToggle span {
-      display: block;
-      width: 30px;
-      height: 4px;
-      margin-bottom: 5px;
-      position: relative;
-      background: #ECF0F1;
-      border-radius: 5px;
-      z-index: 1;
-      transform-origin: 3px 0px;
-      transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-        opacity 0.55s ease;
-    }
-
-    #menuToggle span:first-child {
-      transform-origin: 0% 0%;
-    }
-
-    #menuToggle span:nth-last-child(2) {
-      transform-origin: 0% 100%;
-    }
-
-    #menuToggle input:checked~span {
-      opacity: 1;
-      transform: rotate(45deg) translate(-2px, -1px);
-      background: #fff;
-    }
-
-    #menuToggle input:checked~span:nth-last-child(3) {
-      opacity: 0;
-      transform: rotate(0deg) scale(0.2, 0.2);
-    }
-
-    #menuToggle input:checked~span:nth-last-child(2) {
-      opacity: 1;
-      transform: rotate(-45deg) translate(0, -1px);
-    }
-
-    /*This is the Menu part, which gets triggered by toggle*/
-    #menu {
-      font-weight: 900;
-      font-size: 60px;
-      position: absolute;
-      width: 100vw;
-      height: 110vh;
-      margin: -100px 0 0 -1600px;
-      padding: 80px;
-      padding-top: 125px;
-      background: #232323;
-      list-style-type: none;
-      transform-origin: 0 0;
-      transform: translate(-100%, 0);
-      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-      text-align: center;
-      font-family: 'Noto Sans Korean';
-      color: #fff;
-    }
-
-    #menu li {
-      font-family: 'Noto Sans Korean';
-      float: left;
-
-      z-index: 802000;
-      padding: 15px 0;
-      color: #fff;
-      list-style-type: none;
-      font-size: 40px;
-      font-weight: 900;
-      margin-left: 80px;
-      position: relative;
-      display: inline;
-      margin-top: 220px;
-    }
-
-    #menu li a {
-      margin-left: 200px;
-      font-family: 'Noto Sans Korean';
-      color: #fff;
-      text-decoration: none;
-      text-transformation: uppercase;
-    }
-
-    #menu li a:hover {
-
-      font-family: 'Noto Sans Korean';
-      color: #8C8C8C;
-      text-decoration: none;
-    }
-
-    #menuToggle input:checked~ul {
-      transform: scale(1.0, 1.0);
-      opacity: 1;
-    }
-
-    .menu_name {
-      display: inline;
-      color: #fff;
-      font-size: 40px;
-      margin-left: -1370px;
-      margin-top: -50px;
-      position: absolute;
-
-    }
-
-    .space_1 {
-      display: inline;
-      color: #fff;
-      font-size: 40px;
-      margin-left: -40px;
-      margin-top: 520px;
-      position: absolute;
-
-    }
-
-    #lay2 {
-
-      margin-top: -500px;
-      width: 1000px;
-    }
-
-    /* .scene {
-  position: relative;
-  height: 100%;
-  background: red;
-  padding: 20rem;
-  text-align: center;
-} */
-
-
-
-    .scope {
-
-      z-index: 10001;
-      position: absolute;
-      top: calc(50% - 10rem);
-      left: calc(50% - 10rem);
-      width: 20rem;
-      height: 20rem;
-      background: url("img/bg.png") no-repeat fixed;
-      background-size: cover;
-      background-position: center;
-      border-radius: 50%;
-    }
-
-    .path {
-  stroke-dasharray: 100;
-  animation: dash 5s linear;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 1000;
-  }
-}
-  </style>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <link rel="stylesheet" type="text/css" href="css/web_1.css">
 
 <body>
-    <div id="index">
-  <div id="name">
-    WEB,<br>
-    불한당</div>
+  <div id="index">
+    <div id="name">
+      WEB,<br>
+      불한당</div>
     <a href="https://younjilee.github.io/">
-    <div id="button">
-       <img src="img/button.png" width="150px">
-    </div></a>
-  <div id="name_pro">영화 불한당을 주제로 웹사이트를 제작 했습니다.<br> 불한당의 색, 노래, 영화내용을 담았습니다. </div>
-</div>
-<div id="circle">
-  <?xml version="1.0" encoding="utf-8"?>
-  <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-  <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-     y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-  <g>
-    <g>
-      <defs>
-        <polygon id="SVGID_1_" points="-38.91,-18.91 1032,-18.91 1032,1052 -38.91,1052 -38.91,-18.91 			"/>
-      </defs>
-      <clipPath id="SVGID_2_">
-        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-      </clipPath>
-      <g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_2_);">
-        
-          <image style="overflow:visible;" width="800" height="800" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyMAAAMjCAYAAAC208/FAAAACXBIWXMAAAhNAAAITQEhiCGBAAAA
+      <div id="button">
+        <img src="img/button.png" width="150px">
+      </div>
+    </a>
+    <div id="name_pro">영화 불한당을 주제로 웹사이트를 제작 했습니다.<br> 불한당의 색, 노래, 영화내용을 담았습니다. </div>
+  </div>
+  <div id="circle">
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+      y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+      <g>
+        <g>
+          <defs>
+            <polygon id="SVGID_1_" points="-38.91,-18.91 1032,-18.91 1032,1052 -38.91,1052 -38.91,-18.91 			" />
+          </defs>
+          <clipPath id="SVGID_2_">
+            <use xlink:href="#SVGID_1_" style="overflow:visible;" />
+          </clipPath>
+          <g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_2_);">
+
+            <image style="overflow:visible;" width="800" height="800" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyMAAAMjCAYAAAC208/FAAAACXBIWXMAAAhNAAAITQEhiCGBAAAA
   GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAADPx5JREFUeNrsvfnXHGd593lfVdXL
   s2nfJVuyLGxZXjC2DF6RMTshQAacEEjgkIV3kgyT90xmyW8c/ob89p75JWdO5pw5Jm8SshwCSV6c
   ECCAwBis2GBsbAvbsmRtz9rdVfc913XfVf1Ud9fa3Y/k5fuxW91Pde1bX9+6NqUAAAAAAAAAAAAA
@@ -4140,25 +3772,26 @@ position: absolute;
   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-  AAAAAAAAAAAAAAAAAAAAAMBj90uAAQAR2ivqpF6/zQAAAABJRU5ErkJggg==" transform="matrix(1.3386 0 0 1.3386 -38.9126 -18.9126)">
-        </image>
+  AAAAAAAAAAAAAAAAAAAAAMBj90uAAQAR2ivqpF6/zQAAAABJRU5ErkJggg=="
+              transform="matrix(1.3386 0 0 1.3386 -38.9126 -18.9126)">
+            </image>
+          </g>
+        </g>
       </g>
-    </g>
-  </g>
-  </svg>
-  
-</div>
-<div id="name_19">
-    18-WEB
-</div>   
+    </svg>
 
-<div id="space">00-20</div>
-
-<div class="scroll-downs">
-  <div class="mousey">
-    <div class="scroller"></div>
   </div>
-</div>
+  <div id="name_19">
+    18-WEB
+  </div>
+
+  <div id="space">00-20</div>
+
+  <div class="scroll-downs">
+    <div class="mousey">
+      <div class="scroller"></div>
+    </div>
+  </div>
 
   <nav class="mobilescreen">
     <div title="Menu" id="menuToggle">
@@ -4171,14 +3804,16 @@ position: absolute;
       <span></span>
       <ul id="menu">
         <li>
-          <a href="programming.html">PROGRAMMING
+
+          <a href="programming_menu.html">PROGRAMMING
           </a>
         </li>
-        <li><a href="video.html">VIDEO
+        <li><a href="video_menu.html">VIDEO
           </a>
         </li>
-        <li><a href="design.html">DESIGN
+        <li><a href="design_menu.html">DESIGN
           </a>
+
         </li>
         <div class="menu_name">
           MENU
@@ -4191,8 +3826,8 @@ position: absolute;
         <div class="scene">
 
           <div class="jquery-script-ads">
-            <script type="text/javascript">< !--
-                google_ad_client = "ca-pub-2783044520727903";
+            <script type="text/javascript">
+              google_ad_client = "ca-pub-2783044520727903";
               /* jQuery_demo */
               google_ad_slot = "2780937993";
               google_ad_width = 728;
@@ -4209,17 +3844,20 @@ position: absolute;
     </div>
   </nav>
 
-           
+
   <div id="transcroller-body" class="aos-all">
     <div class="aos-item" data-aos="fade-up">
-      <div class="aos-item__inner"><div class="text1">
-        <div class="t1">#1</div>
-        영화 "불한당"을 소개하는 웹 페이지를 구상하였습니다.<br>영화 줄거리 뿐만 아니라, 영화의 콘셉트 등 영화에 관련 된 작품들을 소개 했습니다.</div></div>
+      <div class="aos-item__inner">
+        <div class="text1">
+          <div class="t1">#1</div>
+          영화 "불한당"을 소개하는 웹 페이지를 구상하였습니다.<br>영화 줄거리 뿐만 아니라, 영화의 콘셉트 등 영화에 관련 된 작품들을 소개 했습니다.
+        </div>
+      </div>
     </div>
     <div class="aos-item_img" data-aos="fade-down">
       <div class="aos-item__inner"></div>
     </div>
-    <div class="aos-item_img" data-aos="zoom-out-down">
+    <div class="aos-item_img2" data-aos="zoom-out-down">
       <div class="aos-item__inner"></div>
     </div>
     <div class="aos-item" data-aos="flip-down">
@@ -4227,36 +3865,36 @@ position: absolute;
 
         <div class="text1">
 
-        <div class="t1">#2</div>
+          <div class="t1">#2</div>
 
-        HTML, JS를 사용해 역동적이며<br> 영화의 개성을 잘 나타 낼 수 있게 표현 했습니다.
-      
-      </div>
-      
+          HTML, JS를 사용해 역동적이며<br> 영화의 개성을 잘 나타 낼 수 있게 표현 했습니다.
 
-      </div>
-    </div>
-
-      </div>
-    </div>
-    <div class="aos-item" data-aos="flip-up">
-      <div class="aos-item__inner">
-
-        <div class="text1">
-
-          <div class="t1">#3</div>
-  
-         색감이 예쁜 영화로 유명한 만큼, <br>GIF를 많이 사용 했습니다.  
-        
         </div>
 
 
       </div>
     </div>
-    <div class="aos-item_img" data-aos="fade-down">
-      <div class="aos-item__inner"></div>
+
+  </div>
+  </div>
+  <div class="aos-item" data-aos="flip-up">
+    <div class="aos-item__inner">
+
+      <div class="text1">
+
+        <div class="t1">#3</div>
+
+        색감이 예쁜 영화로 유명한 만큼, <br>GIF를 많이 사용 했습니다.
+
+      </div>
+
+
     </div>
-   
+  </div>
+  <div class="aos-item_img3" data-aos="fade-down">
+    <div class="aos-item__inner"></div>
+  </div>
+
   </div>
 
   <script src="dist/aos.js"></script>
@@ -4265,254 +3903,11 @@ position: absolute;
       easing: 'ease-in-out-sine'
     });
   </script>
- <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
- <script>
-   var btn = document.querySelector("#circle");
-var ctx;  
-
-var colorInfoElem = document.querySelector("#colorInfo");
-html2canvas(btn).then(canvas => {
- ctx = canvas.getContext("2d");
- 
- createParticleCanvas();
- 
- btn.addEventListener("click", e => {
-   // Get our color data like before
-   let localX = e.offsetX;
-   let localY = e.offsetY;
-   let rgbaColorArr = ctx.getImageData(localX, localY, 1, 1).data;
-
-   // Get the button's positioning in terms of the window
-   let bcr = btn.getBoundingClientRect();
-   let globalX = bcr.left + localX;
-   let globalY = bcr.top + localY;
-
-   // Create a particle using the color we obtained at the window location
-   // that we calculated
-   createParticleAtPoint(globalX, globalY, rgbaColorArr);
- });
-});
-
-
-/* An "exploding" particle effect that uses circles */
-var ExplodingParticle = function() {
- // Set how long we want our particle to animate for
- this.animationDuration = 1000; // in ms
-
- // Set the speed for our particle
- this.speed = {
-   x: -5 + Math.random() * 10,
-   y: -5 + Math.random() * 10
- };
- 
- // Size our particle
- this.radius = 5 + Math.random() * 5;
- 
- // Set a max time to live for our particle
- this.life = 30 + Math.random() * 10;
- this.remainingLife = this.life;
- 
- // This function will be called by our animation logic later on
- this.draw = ctx => {
-   let p = this;
-
-   if(this.remainingLife > 0
-   && this.radius > 0) {
-     // Draw a circle at the current location
-     ctx.beginPath();
-     ctx.arc(p.startX, p.startY, p.radius, 0, Math.PI * 2);
-     ctx.fillStyle = "rgba(" + this.rgbArray[0] + ',' + this.rgbArray[1] + ',' + this.rgbArray[2] + ", 1)";
-     ctx.fill();
-     
-     // Update the particle's location and life
-     p.remainingLife--;
-     p.radius -= 0.25;
-     p.startX += p.speed.x;
-     p.startY += p.speed.y;
-   }
- }
-}
-
-var particles = [];
-function createParticleAtPoint(x, y, colorData) {
- let particle = new ExplodingParticle();
- particle.rgbArray = colorData;
- particle.startX = x;
- particle.startY = y;
- particle.startTime = Date.now();
- 
- particles.push(particle);
-}
-
-
-var particleCanvas, particleCtx;
-function createParticleCanvas() {
- // Create our canvas
- particleCanvas = document.createElement("canvas");
- particleCtx = particleCanvas.getContext("2d");
- 
- // Size our canvas
- particleCanvas.width = window.innerWidth;
- particleCanvas.height = window.innerHeight;
- 
- // Position out canvas
- particleCanvas.style.position = "absolute";
- particleCanvas.style.top = "0";
- particleCanvas.style.left = "0";
- 
- // Make sure it's on top of other elements
- particleCanvas.style.zIndex = "1001";
- 
- // Make sure other elements under it are clickable
- particleCanvas.style.pointerEvents = "none";
- 
- // Add our canvas to the page
- document.body.appendChild(particleCanvas);
-}
-
-
-
-function update() {
- // Clear out the old particles
- if(typeof particleCtx !== "undefined") {
-   particleCtx.clearRect(0, 0, window.innerWidth, window.innerHeight);
- }
-
- // Draw all of our particles in their new location
- for(let i = 0; i < particles.length; i++) {
-   particles[i].draw(particleCtx);
-   
-   // Simple way to clean up if the last particle is done animating
-   if(i === particles.length - 1) {
-     let percent = (Date.now() - particles[i].startTime) / particles[i].animationDuration;
-     
-     if(percent > 1) {
-       particles = [];
-     }
-   }
- }
- 
- // Animate performantly
- window.requestAnimationFrame(update);
-}
-window.requestAnimationFrame(update);
-var test = $('#name');
-var test2 = $('#space');
-var test3 = $('#name_pro');
-var test4 = $('.moving-grad');
-
-var test5 = $('#design');
-var test6 = $('#video');
-var test7 = $('#programming');
-var test8 = $('#button');
-var test9 = $('#circle');
-var test10   = $('#name_19');
-
-test.animate({opacity: "0"}, 0);
-test2.animate({opacity: "0"}, 0);
-test3.animate({opacity: "0"}, 0);
-test4.animate({opacity: "0"}, 0);
-test5.animate({opacity: "0"}, 0);
-test6.animate({opacity: "0"}, 0);
-test7.animate({opacity: "0"}, 0);
-test8.animate({opacity: "0"}, 0);
-test9.animate({opacity: "0"}, 0);
-test10.animate({opacity: "0"}, 0);
-
-setTimeout(function() {test.animate({opacity: "1"}, 2000);}, 500);
-setTimeout(function() {test2.animate({opacity: "1"}, 2000);}, 500);
-//   testEle.fadeIn();
-setTimeout(function() {test3.animate({opacity: "1"}, 1500);}, 600);
-setTimeout(function() {test4.animate({opacity: "1"}, 1000);}, 100);
-
-setTimeout(function() {test5.animate({opacity: "1"}, 1700);}, 100);
-setTimeout(function() {test6.animate({opacity: "1"}, 1700);}, 100);
-setTimeout(function() {test7.animate({opacity: "1"}, 1700);}, 100);
-setTimeout(function() {test8.animate({opacity: "1"}, 2000);}, 900);
-
-setTimeout(function() {test9.animate({opacity: "1"}, 1000);}, 90);
-setTimeout(function() {test10.animate({opacity: "1"}, 2000);}, 500);
-
-   $(document).ready(function () {
-     var $scope = $(".scope"),
-       scopeWHalf = $scope.width() / 2;
-     $(document).on("mousemove", function (e) {
-       $scope.css({ "left": e.pageX - scopeWHalf, "top": e.pageY - scopeWHalf });
-     });
-   });
-   
- </script>
-
- <script type="text/javascript">
-
-   var _gaq = _gaq || [];
-   _gaq.push(['_setAccount', 'UA-36251023-1']);
-   _gaq.push(['_setDomainName', 'jqueryscript.net']);
-   _gaq.push(['_trackPageview']);
-
-   (function () {
-     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-   })();
-
- </script>
-
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      var $scope = $(".scope"),
-        scopeWHalf = $scope.width() / 2;
-      $(document).on("mousemove", function (e) {
-        $scope.css({ "left": e.clientX - scopeWHalf, "top": e.clientY - scopeWHalf });
-      });
-    });
-  </script>
+  <script type="text/javascript" src="js/web_1.js"></script>
 
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36251023-1']);
-    _gaq.push(['_setDomainName', 'jqueryscript.net']);
-    _gaq.push(['_trackPageview']);
-
-    (function () {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      var $scope = $(".scope"),
-        scopeWHalf = $scope.width() / 2;
-      $(document).on("mousemove", function (e) {
-        $scope.css({ "left": e.pageX - scopeWHalf, "top": e.pageY - scopeWHalf });
-      });
-    });
-  </script>
-
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36251023-1']);
-    _gaq.push(['_setDomainName', 'jqueryscript.net']);
-    _gaq.push(['_trackPageview']);
-
-    (function () {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-
-  
 </body>
 
 </html>
